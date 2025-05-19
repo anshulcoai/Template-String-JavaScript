@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template string</title>
+    <style>
+        #btn1,#btn2{
+          font-size: 30px;
+          border-radius: 20px;
+          &:hover{
+            cursor: pointer;
+            background-color: black;
+            color: azure;
+            font-variant: small-caps;
+          }
+        }
+        input{
+            width: 20%;
+        }
+        p{
+            font-size: x-large;
+            font-variant: small-caps;
+        }
+        #para6{
+            color: darkmagenta;
+            &:hover{
+                color:gold;
+            }
+        }
+        #para6::selection{
+            color: red;
+            background-color: yellowgreen;
+        }
+        #inp2{
+            padding: 10px;
+        }
+        #btn2{
+            margin-top:2%;
+        }
+    </style>
+</head>
+<body>
+    <p>Write your name</p>
+    <input id="inp" type="text">
+    <p>What is the time right now in 24 hours format :
+        <input type="text" id="inp1">
+    </p>
+
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+    <p id="para4"></p>
+    <p id="para5"></p>
+    <p id="para6"></p>
+    <p id="para7"></p>
+    <p id="para8"></p>
+    <p id="para9"></p>
+    <p id="para10"></p>
+    
+    <br>
+    <button id="btn1" onclick="temp()">Click me</button>
+    <p>Write a number u want a square of</p>
+    <input type="text" id="inp2"><br>
+    <p>Write your age</p>
+    <input type="text" id="inp3"><br>
+    <button id="btn2" onclick="temp2()">Click me</button>
+    
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
